@@ -211,3 +211,17 @@ i.fa-fw.fas.fa-heart {
         border-right: 0px solid transparent;
     }
 }
+
+/*全局修改字体样式*/
+@font-face {
+    font-family: 'tzy';
+    /* 字体名自定义即可 */
+    src: url('https://fastly.jsdelivr.net/gh/tzy13755126023/BLOG_SOURCE/font/ZhuZiAWan.woff2');
+    /* 字体文件路径 */
+    font-display: swap;
+}
+
+body,
+.gitcalendar {
+    font-family: tzy !important;
+}
