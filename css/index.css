@@ -689,7 +689,7 @@ canvas:not(#ribbon-canvas),
   --search-bg: #f6f8fa;
   --search-input-color: #4c4948;
   --search-result-title: #4c4948;
-  --preloader-bg: #37474f;
+  --preloader-bg: #9ab3f5;
   --preloader-color: #fff;
   --tab-border-color: #f0f0f0;
   --tab-botton-bg: #f0f0f0;
@@ -2502,7 +2502,7 @@ h1.page-title + .tag-cloud-list {
   z-index: 1001;
   width: 50%;
   height: 100%;
-  background: var(--preloader-bg);
+  background: #37474f;
 }
 #loading-box .loading-left-bg {
   left: 0;
@@ -4128,6 +4128,9 @@ mjx-container[display],
   height: 100%;
   background: var(--preloader-bg);
 }
+#loading-box {
+  background: rgba(0,0,0,0.8);
+}
 #loading-box .loading-left-bg {
   left: 0;
 }
@@ -4136,6 +4139,7 @@ mjx-container[display],
 }
 #loading-box.loaded {
   z-index: -1000;
+  display: none;
 }
 #loading-box.loaded .loading-left-bg {
   transition: all 1s;
